@@ -19,7 +19,7 @@ connection.connect((err) => {
 
 app.get('/', (req, res) => {
     let dom ;
-    dom = "<h1> Hello World! </h1>";
+    dom = "<h1> Hello World! :) </h1>";
     dom += "<br>Connection to MySQL Server : ";
     dom += (isConnected) ? "OK" : "ERROR";
     res.send(dom);

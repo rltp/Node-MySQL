@@ -2,15 +2,15 @@ name: integration
 on: [push, pull_request]
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     timeout-minutes: 1
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - name: Use Node.js v10
+      - name: Use Node.js v12
         uses: actions/setup-node@v1
         with:
-          node-version: latest
+          node-version: 12.x
       - name: Install
         run: npm install
       - name: Start

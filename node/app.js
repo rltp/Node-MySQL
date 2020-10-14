@@ -14,7 +14,7 @@ let isConnected = false;
 
 connection.connect((err) => {
   isConnected = (err === null);
-  console.log('Connected to MySQL Server!');
+  console.log('Connected to MySQL Server! :)');
 });
 
 app.get('/', (req, res) => {

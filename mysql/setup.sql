@@ -1,0 +1,6 @@
+
+CREATE TABLE node-mysql (
+  id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  FirstName VARCHAR(40) NULL,
+  LastName  VARCHAR(40) NULL,
+)
